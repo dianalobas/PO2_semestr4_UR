@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>lab1</name>
+    </assembly>
+    <members>
+        <member name="M:lab1.Task1.TaskLab.Run">
+            <summary>
+            Metoda urushomienia dla zadań
+            </summary>
+            <remarks>
+            Autor: Diana Lobas
+            data: 02.03.2026
+            środowisko: .net10
+            </remarks>  
+        </member>
+        <member name="M:lab1.Task1.TaskLab.rownanieKW">
+            <summary>
+            pozostałe metody prywatne dla rozwiązań zadań
+            Metoda obliczająca wyróżnik delta i pierwiastki trójmianu kwadratowego
+             </summary>
+        </member>
+        <member name="M:lab1.Task1.TaskLab.inputDouble(System.String)">
+            <summary>
+            Metoda która pobiera string usera i wykonuje konwersje na double. Wymusza poprawne podanie liczby
+             </summary>
+        </member>
+        <member name="M:lab1.Task1.TaskLab.obliczenie10liczb">
+            <summary>
+            Metoda która umożliwia wprowadzanie 10-ciu liczb i oblicznia ich sumy, średniej, iloczyn, min i max   
+             </summary>
+        </member>
+        <member name="M:lab1.Task1.TaskLab.show20Numb">
+            <summary>
+            Metoda wyświetlająca liczby od 20-0, z wyłączeniem liczb {2,6,9,15,19}. 
+             </summary>
+        </member>
+        <member name="M:lab1.Task1.TaskLab.negativeNumberStop">
+            <summary>
+            Metoda, która w nieskończoność pyta użytkownika o liczby całkowite. Ona się zatrzymuje, gdy użytkownik wprowadzi liczbę mniejszą od zera.
+             </summary>
+        </member>
+        <member name="M:lab1.Task1.TaskLab.insertionSort">
+            <summary>
+            Metoda umożliwiająca wprowadzanie n liczb oraz sortuje te liczby metodą bąbelkową lub wstawiania. (Od najmniejszego do największego)
+            </summary>
+        </member>
+        <member name="M:lab1.Task1.TaskLab.LosujLiczbeOdUzytkownika">
+            <summary>
+            Metoda umożliwiająca wprowadzanie min i max. Zwraca liczbe typu double, ktra znajduje się w tym przedziale.
+            </summary>
+        </member>
+    </members>
+</doc>
