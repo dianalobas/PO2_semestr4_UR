@@ -1,0 +1,15 @@
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\bin\Debug\net10.0\lab2.exe
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\bin\Debug\net10.0\lab2.deps.json
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\bin\Debug\net10.0\lab2.runtimeconfig.json
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\bin\Debug\net10.0\lab2.dll
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\bin\Debug\net10.0\lab2.pdb
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\lab2.AssemblyInfoInputs.cache
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\lab2.AssemblyInfo.cs
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\lab2.csproj.CoreCompileInputs.cache
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\lab2.sourcelink.json
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\lab2.dll
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\refint\lab2.dll
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\lab2.pdb
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\lab2.genruntimeconfig.cache
+D:\Uniwersytet_UR\2025-2026\semestr_4\C#\labaratoria\lab2\lab2\lab2\obj\Debug\net10.0\ref\lab2.dll
