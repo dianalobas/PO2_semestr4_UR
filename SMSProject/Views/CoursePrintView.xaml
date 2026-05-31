@@ -1,0 +1,36 @@
+<UserControl x:Class="SMSProject.Views.CoursePrintView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#FFF7F9FC">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="16"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Drukuj kursy"
+                   FontSize="18" FontWeight="Bold" Foreground="#FF0047A1"/>
+        <DataGrid Grid.Row="2" x:Name="printCoursesGrid"
+                  AutoGenerateColumns="False" IsReadOnly="True"
+                  GridLinesVisibility="Horizontal" HeadersVisibility="Column"
+                  RowBackground="White" AlternatingRowBackground="#FFF0F4FB" FontSize="13">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID"         Binding="{Binding CourseId}"   Width="55"/>
+                <DataGridTextColumn Header="Nazwa kursu" Binding="{Binding CourseName}" Width="*"/>
+                <DataGridTextColumn Header="ECTS"       Binding="{Binding Ects}"        Width="60"/>
+                <DataGridTextColumn Header="Semestr"    Binding="{Binding Semester}"    Width="110"/>
+                <DataGridTextColumn Header="Prowadzący" Binding="{Binding Lecturer}"    Width="180"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Odśwież" Width="90" Height="32" Margin="0,0,8,0"
+                    Background="#FFD0D8E8" Foreground="#FF1F2D3D" FontSize="13" BorderThickness="0" Cursor="Hand"
+                    Click="refreshButton_Click"/>
+            <Button Content="Drukuj"  Width="90" Height="32"
+                    Background="#FF0047A1" Foreground="White" FontSize="13" FontWeight="Bold" BorderThickness="0" Cursor="Hand"
+                    Click="printButton_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

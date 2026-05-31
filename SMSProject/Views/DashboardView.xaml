@@ -1,0 +1,103 @@
+<UserControl x:Class="SMSProject.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="#FFF7F9FC">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="10">
+
+            <TextBlock Text="Dashboard" FontSize="18" FontWeight="Bold" Foreground="#FF0047A1" Margin="0,0,0,16"/>
+
+            <!-- Kafelki statystyk -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Background="White" Padding="16" CornerRadius="4"
+                        BorderBrush="#FFD8E1F0" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Liczba studentów" FontSize="13" Foreground="Gray"/>
+                        <TextBlock x:Name="totalStudentsText" Text="0" FontSize="32" FontWeight="Bold" Foreground="#FF0047A1"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="2" Background="White" Padding="16" CornerRadius="4"
+                        BorderBrush="#FFD8E1F0" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Liczba kursów" FontSize="13" Foreground="Gray"/>
+                        <TextBlock x:Name="totalCoursesText" Text="0" FontSize="32" FontWeight="Bold" Foreground="#FF0047A1"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="4" Background="White" Padding="16" CornerRadius="4"
+                        BorderBrush="#FFD8E1F0" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Liczba wyników" FontSize="13" Foreground="Gray"/>
+                        <TextBlock x:Name="totalResultsText" Text="0" FontSize="32" FontWeight="Bold" Foreground="#FF0047A1"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="6" Background="White" Padding="16" CornerRadius="4"
+                        BorderBrush="#FFD8E1F0" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Średnia ocen" FontSize="13" Foreground="Gray"/>
+                        <TextBlock x:Name="avgGradeText" Text="0.00" FontSize="32" FontWeight="Bold" Foreground="#FF0047A1"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <!-- Dolna sekcja -->
+            <Grid Margin="0,16,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="16"/>
+                    <ColumnDefinition Width="260"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Ostatnio dodani studenci -->
+                <Border Grid.Column="0" Background="White" Padding="12"
+                        BorderBrush="#FFD8E1F0" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Ostatnio dodani studenci" FontSize="14" FontWeight="SemiBold"
+                                   Foreground="#FF0047A1" Margin="0,0,0,8"/>
+                        <DataGrid x:Name="recentStudentsGrid"
+                                  AutoGenerateColumns="False" IsReadOnly="True" HeadersVisibility="Column"
+                                  GridLinesVisibility="Horizontal" RowBackground="White"
+                                  AlternatingRowBackground="#FFF0F4FB" FontSize="12" Height="180">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID"       Binding="{Binding StudentId}"   Width="45"/>
+                                <DataGridTextColumn Header="Imię"     Binding="{Binding FirstName}"   Width="*"/>
+                                <DataGridTextColumn Header="Nazwisko" Binding="{Binding LastName}"    Width="*"/>
+                                <DataGridTextColumn Header="Nr alb."  Binding="{Binding AlbumNumber}" Width="80"/>
+                                <DataGridTextColumn Header="Grupa"    Binding="{Binding GroupId}"     Width="60"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </Border>
+
+                <!-- Szybkie informacje -->
+                <Border Grid.Column="2" Background="White" Padding="12"
+                        BorderBrush="#FFD8E1F0" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="Szybkie informacje" FontSize="14" FontWeight="SemiBold"
+                                   Foreground="#FF0047A1" Margin="0,0,0,12"/>
+                        <TextBlock Text="Kobiety" FontSize="13" Foreground="Gray"/>
+                        <TextBlock x:Name="femaleCountText" Text="0" FontSize="28" FontWeight="Bold"
+                                   Foreground="#FF0047A1" Margin="0,0,0,12"/>
+                        <TextBlock Text="Mężczyźni" FontSize="13" Foreground="Gray"/>
+                        <TextBlock x:Name="maleCountText" Text="0" FontSize="28" FontWeight="Bold"
+                                   Foreground="#FF0047A1"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
